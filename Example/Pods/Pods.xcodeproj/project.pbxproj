@@ -11,6 +11,8 @@
 		3AAA2AEA79ACA26B0829B8AB2E8228B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		53EFAEDB3A2E35152BBE88DBFEC05665 /* CFUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F660D621D9BDADF38F677BAE43EC6 /* CFUtils-dummy.m */; };
 		5E1A4DF8FE7122858447FAAA4927D725 /* CFUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE21F20795354A67D48CF4DA128143E9 /* CFUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C588392180BD2F009B6597 /* NSBundle+CFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C588372180BD2F009B6597 /* NSBundle+CFUtils.h */; };
+		63C5883A2180BD2F009B6597 /* NSBundle+CFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C588382180BD2F009B6597 /* NSBundle+CFUtils.m */; };
 		6450237015318711345269E0B2916127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		A94B2E121A6A4F488494171362187E37 /* Pods-CFUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A7CAD80211AB9F47B435469B55327 /* Pods-CFUtils_Tests-dummy.m */; };
 		BAD97378458B44B96D23672093DE9FB0 /* Pods-CFUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D6B0EF30D06AE1D5D1DC631DA870C5 /* Pods-CFUtils_Example-dummy.m */; };
@@ -49,6 +51,8 @@
 		57987A38795CF6DEFD5378947B2E1D6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5AD0A7C2870368E5E4716693CD29B70F /* Pods-CFUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
+		63C588372180BD2F009B6597 /* NSBundle+CFUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CFUtils.h"; sourceTree = "<group>"; };
+		63C588382180BD2F009B6597 /* NSBundle+CFUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CFUtils.m"; sourceTree = "<group>"; };
 		646FD88CD25ECC2DE2F4F639802FD134 /* Pods-CFUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6648B377B3ED3C3F8AC65F51C77F757B /* CFUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CFUtils.podspec; sourceTree = "<group>"; };
 		690174F6A8A2C19F0F6CD8424CA5EE1B /* Pods-CFUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CFUtils_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -126,6 +130,16 @@
 				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		63C588362180BD21009B6597 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				63C588372180BD2F009B6597 /* NSBundle+CFUtils.h */,
+				63C588382180BD2F009B6597 /* NSBundle+CFUtils.m */,
+			);
+			name = Category;
+			path = CFUtils/Classes/Category;
 			sourceTree = "<group>";
 		};
 		6617450929A8CA991F095BBC8754F6A8 /* Targets Support Files */ = {
@@ -206,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				FACACEF4B7F25538A6736C419DF3F4E7 /* ReplaceMe.m */,
+				63C588362180BD21009B6597 /* Category */,
 				862FE77CFB88A3E360A062676BCAEDF1 /* Pod */,
 				F9C0A852571C0BA3BE9E7078D881D497 /* Support Files */,
 			);
@@ -234,6 +249,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C588392180BD2F009B6597 /* NSBundle+CFUtils.h in Headers */,
 				5E1A4DF8FE7122858447FAAA4927D725 /* CFUtils-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +377,7 @@
 			files = (
 				53EFAEDB3A2E35152BBE88DBFEC05665 /* CFUtils-dummy.m in Sources */,
 				C4BEA67A874879B3220B455D664C4A98 /* ReplaceMe.m in Sources */,
+				63C5883A2180BD2F009B6597 /* NSBundle+CFUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
