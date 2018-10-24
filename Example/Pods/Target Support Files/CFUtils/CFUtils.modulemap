@@ -1,0 +1,6 @@
+framework module CFUtils {
+  umbrella header "CFUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
