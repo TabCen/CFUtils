@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CFUtils_Example' do
+  pod 'CFUtils', :path => '../'
+
+  target 'CFUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
